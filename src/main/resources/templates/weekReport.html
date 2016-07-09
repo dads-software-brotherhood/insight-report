@@ -1,0 +1,261 @@
+<html>
+<head>
+<style>
+.datagrid table {
+	border-collapse: collapse;
+	text-align: left;
+	width: 50%;
+}
+
+.datagrid table .header {
+	text-align: center;
+}
+
+.datagrid table .data {
+	text-align: center;
+}
+
+.datagrid {
+	font: normal 12px/150% Arial, Helvetica, sans-serif;
+	background: #fff;
+	overflow: hidden;
+	border: 1px solid #36752D;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.datagrid table td, .datagrid table th {
+	padding: 3px 10px;
+}
+
+.datagrid .header {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #36752D
+		), color-stop(1, #275420));
+	background: -moz-linear-gradient(center top, #36752D 5%, #275420 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#36752D',
+		endColorstr='#275420');
+	background-color: #36752D;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: bold;
+	border-left: 1px solid #36752D;
+}
+
+.datagrid table thead th:first-child {
+	border: none;
+}
+
+.datagrid table tbody td {
+	color: #275420;
+	border-left: 1px solid #C6FFC2;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.datagrid table tbody .alt td {
+	background: #DFFFDE;
+	color: #275420;
+}
+
+.datagrid table tbody td:first-child {
+	border-left: none;
+}
+
+.datagrid table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+.datagrid table tfoot td div {
+	border-top: 1px solid #36752D;
+	background: #DFFFDE;
+}
+
+.datagrid table tfoot td {
+	padding: 0;
+	font-size: 12px
+}
+
+.datagrid table tfoot td div {
+	padding: 2px;
+}
+
+.datagrid table tfoot td ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: right;
+}
+
+.datagrid table tfoot  li {
+	display: inline;
+}
+
+.datagrid table tfoot li a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 2px 8px;
+	margin: 1px;
+	color: #FFFFFF;
+	border: 1px solid #36752D;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #36752D
+		), color-stop(1, #275420));
+	background: -moz-linear-gradient(center top, #36752D 5%, #275420 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#36752D',
+		endColorstr='#275420');
+	background-color: #36752D;
+}
+
+.datagrid table tfoot ul.active, .datagrid table tfoot ul a:hover {
+	text-decoration: none;
+	border-color: #275420;
+	color: #FFFFFF;
+	background: none;
+	background-color: #36752D;
+}
+
+div.dhtmlx_window_active, div.dhx_modal_cover_dv {
+	position: fixed !important;
+}
+</style>
+</head>
+<body>
+	<div class="datagrid">
+		<table name="summary" border="1">
+			<tbody>
+				<tr>
+					<td></td>
+					<td class="header" colspan="3">Direct Hours</td>
+					<td></td>
+					<td class="header" colspan="3">Earned Value</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="header">Plan</td>
+					<td class="header">Actual</td>
+					<td class="header">Actual/Plan</td>
+					<td></td>
+					<td class="header">Plan</td>
+					<td class="header">Actual</td>
+					<td class="header">Actual/Plan</td>
+				</tr>
+				<tr>
+					<td class="left">This Week</td>
+					<td class="data">${data00}</td>
+					<td class="data">${data01}</td>
+					<td class="data">${data02}</td>
+					<td></td>
+					<td class="data">${data03}</td>
+					<td class="data">${data04}</td>
+					<td class="data">${data05}</td>
+				</tr>
+				<tr class="alt">
+					<td>To Date</td>
+					<td class="data">${data10}</td>
+					<td class="data">${data11}</td>
+					<td class="data">${data12}</td>
+					<td></td>
+					<td class="data">${data13}</td>
+					<td class="data">${data14}</td>
+					<td class="data">${data15}</td>
+				</tr>
+				<tr>
+					<td>Average per Week To Date</td>
+					<td class="data">${data20}</td>
+					<td class="data">${data21}</td>
+					<td class="data">${data22}</td>
+					<td></td>
+					<td class="data">${data23}</td>
+					<td class="data">${data24}</td>
+					<td class="data">${data25}</td>
+				</tr>
+				<tr class="alt">
+					<td>Completed Tasks To Date</td>
+					<td class="data">${data30}</td>
+					<td class="data">${data31}</td>
+					<td class="data">${data32}</td>
+					<td></td>
+					<td class="data">${data33}</td>
+					<td class="data">${data34}</td>
+					<td class="data">${data35}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<div class="datagrid">
+		<table name="performanceTable" border="1">
+			<tbody>
+				<tr>
+					<td></td>
+					<td class="header">Valor</td>
+					<td class="header">Metrica</td>
+				</tr>
+				<tr>
+					<td>Valor Ganado (VG)</td>
+					<td class="data">${pTable.vg}</td>
+					<td>%</td>
+				</tr>
+				<tr class="alt">
+					<td>Diferencia (VG)</td>
+					<td class="data">${pTable.vgDiff}</td>
+					<td>Puntos</td>
+				</tr>
+				<tr>
+					<td>Falta</td>
+					<td class="data">${pTable.vgFalta}</td>
+					<td>%</td>
+				</tr>
+				<tr class="alt">
+					<td>Horas Tarea</td>
+					<td class="data">${pTable.taskHours}</td>
+					<td>Horas</td>
+				</tr>
+				<tr>
+					<td>Tareas Cerradas Sobre/SubEstimadas</td>
+					<td class="data">${pTable.taskClosed}</td>
+					<td>%</td>
+				</tr>
+				<tr class="alt">
+					<td>Horas en tareas no terminadas</td>
+					<td class="data">${pTable.hoursNotFinished}</td>
+					<td>Horas</td>
+				</tr>
+				<tr>
+					<td>Semanas de Hs en tareas no terminadas</td>
+					<td class="data">${pTable.weekHrsNotFinished}</td>
+					<td>Semanas</td>
+				</tr>
+				<tr class="alt">
+					<td>VG/H</td>
+					<td class="data">${pTable.vgPerHour}</td>
+					<td>Puntos/Hora</td>
+				</tr>
+				<tr>
+					<td>VG no realizado</td>
+					<td class="data">${pTable.vgNotPerformed}</td>
+					<td>Puntos</td>
+				</tr>
+				<tr class="alt">
+					<td>Recuperaci&oacute;n</td>
+					<td class="data">${pTable.recovery}</td>
+					<td>Semanas</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<img src="ev.png" alt="Valor Ganado Acumulado">
+	<img src="directHours.png" alt="Tendencias de Horas Directas">
+	<img src="evTrend.png" alt="Tendencia de Valor Ganado">
+	<img src="directTimeTrend.png" alt="Tendencia de Horas Directas">
+	<img src="externalCommitments.png" alt="Compromisos Externos">
+	<img src="milestones.png" alt="Hitos">
+	<img src="inPogressTasks.png" alt="Tareas en Progreso">
+	<img src="defects.png" alt="Defectos Removidos por Tipo">
+	<img src="defects1.png" alt="Tiempo de Defectos Removidos por Tipo">
+</body>
+</html>

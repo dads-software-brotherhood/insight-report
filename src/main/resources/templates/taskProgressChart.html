@@ -1,0 +1,43 @@
+<div class="col-md-6 col-sm-6 col-xs-12">
+	<div class="x_panel">
+		<div class="x_title">
+			<h2>
+				Tareas en Progreso<small></small>
+			</h2>
+			<div class="clearfix"></div>
+		</div>
+		<div class="x_content">
+			<a href="reportImages/inPogressTasks.png"> <img
+				src="reportImages/inPogressTasks.png" alt="..."
+				class="img-container"></a>
+		</div>
+	</div>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12">
+	<div class="x_panel">
+		<div class="x_title">
+			<h2>
+				Tareas en Progreso<small></small>
+			</h2>
+			<div class="clearfix"></div>
+		</div>
+		<div class="x_content">
+			<table name="performanceTable" border="1"
+				class="table table-bordered table-striped table-responsive">
+				<tbody>
+					<#list tasks as task>
+					<tr>
+						<td class="data">${task}</td>
+					</tr>
+					</#list>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+

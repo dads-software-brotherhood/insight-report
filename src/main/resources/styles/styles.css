@@ -1,0 +1,67 @@
+/* Application wide styles */
+.root {
+	-fx-background-image: url("background.jpg");
+}
+
+.label {
+	-fx-font-size: 12px;
+	-fx-font-weight: bold;
+	-fx-text-fill: #2e3436;
+	-fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 0, 0, 0, 1);
+}
+
+.background {
+	-fx-background-image: url("../images/background.jpg");
+}
+
+.button {
+	-fx-text-fill: white;
+	-fx-font-family: "Arial Narrow";
+	-fx-font-weight: bold;
+	-fx-background-color: linear-gradient(#61a2b1, #2A5058);
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+.button:hover {
+	-fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+/* Component specific styles */
+.main-panel {
+	-fx-background-image: url("../images/background.jpg");
+}
+
+.hello-message {
+	-fx-text-fill: #31698A;
+	-fx-font-weight: bold;
+	-fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 0, 0, 0, 1);
+}
+
+#windows7-default {
+	-fx-background-color: #3c7fb1, linear-gradient(#fafdfe, #e8f5fc),
+		linear-gradient(#eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+	-fx-background-insets: 0, 1, 2;
+	-fx-background-radius: 3, 2, 1;
+	-fx-padding: 3 30 3 30;
+	-fx-text-fill: black;
+	-fx-font-size: 14px;
+}
+
+#actiontarget {
+	-fx-fill: FIREBRICK;
+	-fx-font-weight: bold;
+	-fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 0, 0, 0, 1);
+}
+
+#mainText {
+	-fx-font-size: 32px;
+	-fx-font-family: "Arial Black";
+	-fx-fill: #818181;
+	-fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.7), 6, 0.0, 0, 2);
+}
+#propertiesText {
+	-fx-font-size: 22px;
+	-fx-font-family: "Arial Black";
+	-fx-fill: #818181;
+	-fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.7), 6, 0.0, 0, 2);
+}

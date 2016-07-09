@@ -1,0 +1,74 @@
+
+<div class="col-md-6 col-sm-6 col-xs-12">
+	<div class="x_panel">
+		<div class="x_title">
+			<h2>Métricas de Desempeño</h2>
+			<ul class="nav navbar-right panel_toolbox"></ul>
+			<div class="clearfix"></div>
+		</div>
+		<div class="x_content">
+
+			<table name="performanceTable" border="1"
+				class="table table-bordered table-striped table-responsive">
+				<tbody>
+					<tr>
+						<td></td>
+						<td class="header">Valor</td>
+						<td class="header">Metrica</td>
+					</tr>
+					<tr>
+						<td>Valor Ganado (VG)</td>
+						<td class="data">${pTable.vg}</td>
+						<td>%</td>
+					</tr>
+					<tr class="alt">
+						<td>Diferencia (VG)</td>
+						<td class="data">${pTable.vgDiff}</td>
+						<td>Puntos</td>
+					</tr>
+					<tr>
+						<td>Falta</td>
+						<td class="data">${pTable.vgFalta}</td>
+						<td>%</td>
+					</tr>
+					<tr class="alt">
+						<td>Horas Tarea</td>
+						<td class="data">${pTable.taskHours}</td>
+						<td>Horas</td>
+					</tr>
+					<tr>
+						<td>Tareas Cerradas Sobre/SubEstimadas</td>
+						<td class="data">${pTable.taskClosed}</td>
+						<td>%</td>
+					</tr>
+					<tr class="alt">
+						<td>Horas en tareas no terminadas</td>
+						<td class="data">${pTable.hoursNotFinished}</td>
+						<td>Horas</td>
+					</tr>
+					<tr>
+						<td>Semanas de Hs en tareas no terminadas</td>
+						<td class="data">${pTable.weekHrsNotFinished}</td>
+						<td>Semanas</td>
+					</tr>
+					<tr class="alt">
+						<td>VG/H</td>
+						<td class="data">${pTable.vgPerHour}</td>
+						<td>Puntos/Hora</td>
+					</tr>
+					<tr>
+						<td>VG no realizado</td>
+						<td class="data">${pTable.vgNotPerformed}</td>
+						<td>Puntos</td>
+					</tr>
+					<tr class="alt">
+						<td>Recuperaci&oacute;n</td>
+						<td class="data">${pTable.recovery}</td>
+						<td>Semanas</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+</div>
